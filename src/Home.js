@@ -4,7 +4,7 @@ import Product from './Product'
 const Home = () => {
   return (
     <div className='home'>
-      <img className='home__image' src='https://m.media-amazon.com/images/I/711Y9Al9RNL._SX3000_.jpg' alt=''/>
+      <img className='home__image' src='https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg' alt=''/>
 
       <div className="home__row">
         <Product id='1' title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses" price={11.96} rating={5} image='https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SX329_BO1,204,203,200_.jpg'/>

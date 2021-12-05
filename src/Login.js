@@ -11,23 +11,25 @@ const Login = () => {
   const login = (event) => {
     event.preventDefault() // this stops the refresh
     // do the login logic...
-    auth.signInWithEmailAndPassword(email, password)
-    .then((auth) => {
-      // logged in, redirect to homepage
-      navigate('/')
-    })
-    .catch((e)=> alert(e.message))
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        // logged in, redirect to homepage
+        navigate('/')
+      })
+      .catch((e)=> alert(e.message))
   }
 
   const register = (event) => {
     event.preventDefault() // this stops the refresh
     // do the register logic
-    auth.createUserWithEmailAndPassword(email, password)
-    .then((auth) => {
-      // create a user andlogged in, redirect to homepage
-      navigate('/')
-    })
-    .catch((e)=> alert(e.message))
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        // create a user andlogged in, redirect to homepage
+        navigate('/')
+      })
+      .catch((e)=> alert(e.message))
   }
 
   return (
